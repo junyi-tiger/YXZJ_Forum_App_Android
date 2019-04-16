@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".activities.NewPostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="发表新帖子"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="20">
+
+                <EditText
+                    android:id="@+id/new_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:hint="请输入标题"
+                    android:textSize="20sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="1000">
+
+                <EditText
+                    android:id="@+id/new_post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:singleLine="false"
+                    android:minLines="8"
+                    android:gravity="top"
+                    android:hint="请输入内容"
+                    android:inputType="textMultiLine"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/button_new_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="发表"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

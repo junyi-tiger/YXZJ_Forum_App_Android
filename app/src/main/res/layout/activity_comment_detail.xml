@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.CommentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/comment_avater_detail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/avater1"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/comment_username_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="#555555"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="center"
+            android:text="用户名"/>
+        <TextView
+            android:id="@+id/comment_time_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="bottom|end"
+            android:textSize="12sp"
+            android:text="发表于2019-4-12 19:21"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_content_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:text="回复内容"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/imageView_comment_like_detail"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/ic_icon_likegood_fill"/>
+        <TextView
+            android:id="@+id/comment_like_num_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="0"/>
+        <android.support.constraint.Placeholder
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/imageView_comment_reply_detail"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/ic_icon_replieslist"/>
+        <TextView
+            android:id="@+id/comment_replies_num_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|left"
+            android:text="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/replies_to_comment_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/reply_new_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:singleLine="true"
+                android:hint="输入新回复"/>
+            <Button
+                android:id="@+id/reply_new_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="回复"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

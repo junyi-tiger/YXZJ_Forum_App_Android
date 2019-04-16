@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_my_collection"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="我的收藏" />
+    <item
+        android:id="@+id/nav_my_post"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="我的帖子" />
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享" />
+        </menu>
+    </item>
+
+</menu>

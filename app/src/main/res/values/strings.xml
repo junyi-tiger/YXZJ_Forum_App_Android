@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">益学之家</string>
+    <string name="navigation_drawer_open">打开侧边栏</string>
+    <string name="navigation_drawer_close">关闭侧边栏</string>
+    <string name="nav_header_title">益学之家论坛</string>
+    <string name="nav_header_subtitle">yixuezhijia@forum.com</string>
+    <string name="nav_header_desc">导航栏</string>
+    <string name="action_settings">退出登录</string>
+    <string name="title_activity_login">益学之家</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username_or_email">用户名/邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_up">注册</string>
+    <string name="title_activity_my_posts">我的帖子</string>
+    <string name="title_activity_post_detail">帖子详情</string>
+    <string name="title_activity_new_post">发表新帖子</string>
+    <string name="title_activity_user_info">用户资料</string>
+    <string name="title_activity_comment_detail">评论详情</string>
+</resources>
